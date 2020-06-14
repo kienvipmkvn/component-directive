@@ -1,0 +1,40 @@
+<div *ngIf="company==null; else detail">
+    <p>Please select a company</p>
+</div>
+
+<ng-template #detail>
+    <div class="row">
+        <div class="col-xs-12">
+            <img src="{{company.imgPath}}" alt="{{company.name}}" class="img-responsive">
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>{{ company.name }}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="btn-group" appCustom2>
+                <button class="btn btn-primary dropdown-toggle">Manage Company <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Edit company</a></li>
+                    <li><a href="#">Delete company</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            Number of employees: {{ company.numberofEmployee }}<br>
+            Address: {{ company.address }}<br>
+            Establishment day: {{ company.establishmentDay }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            Products
+        </div>
+    </div>
+</ng-template>
