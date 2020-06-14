@@ -11,7 +11,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductEditComponent } from './product-list/product-edit/product-edit.component';
 import { CompanyDetailComponent } from './companies/company-detail/company-detail.component';
 import { Custom1 } from './custom/custom1.directive';
-import { Custom2Directive } from './custom/custom2.directive';
+import { Custom2Directive } from './custom/dropdown.directive';
 
 @NgModule({
   declarations: [
